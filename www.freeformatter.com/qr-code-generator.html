@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>Free Online QR Code</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="5.0.0.1/images/favicon.ico" rel="shortcut icon">
+<link href="5.0.0.1/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+<link href="5.0.0.1/css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+<script>const _appVersion = "5.0.0.1";</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0BGQDKW33P"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-0BGQDKW33P');
+</script>
+<script type="text/javascript">
+	!function(){var i,r,o;i="__tcfapiLocator",r=[],(o=window.frames[i])||(function e(){var t=window.document,a=!!o;if(!a)if(t.body){var n=t.createElement("iframe");n.style.cssText="display:none",n.name=i,t.body.appendChild(n)}else setTimeout(e,5);return!a}(),window.__tcfapi=function(){for(var e,t=[],a=0;a<arguments.length;a++)t[a]=arguments[a];if(!t.length)return r;if("setGdprApplies"===t[0])3<t.length&&2===parseInt(t[1],10)&&"boolean"==typeof t[3]&&(e=t[3],"function"==typeof t[2]&&t[2]("set",!0));else if("ping"===t[0]){var n={gdprApplies:e,cmpLoaded:!1,cmpStatus:"stubCMP",apiVersion:2};"function"==typeof t[2]&&t[2](n,!0)}else r.push(t)},window.addEventListener("message",function(n){var i="string"==typeof n.data,e={};try{e=i?JSON.parse(n.data):n.data}catch(e){}var r=e.__tcfapiCall;r&&window.__tcfapi(r.command,r.version,function(e,t){var a={__tcfapiReturn:{returnValue:e,success:t,callId:r.callId}};i&&(a=JSON.stringify(a)),n.source.postMessage(a,"*")},r.parameter)},!1))}();
+	!function(){var i,n,s;i="__uspapiLocator",n=[],(s=window.frames[i])||(function a(){var e=window.document,n=!!s;if(!s)if(e.body){var t=e.createElement("iframe");t.style.cssText="display:none",t.name=i,e.body.appendChild(t)}else setTimeout(a,5);return!n}(),window.__uspapi=function(){for(var a=[],e=0;e<arguments.length;e++)a[e]=arguments[e];if(!a.length)return n;"ping"===a[0]?"function"==typeof a[2]&&a[2]({cmpLoaded:!1,cmpStatus:"stubCMP"},!0):n.push(a)},window.addEventListener("message",function(t){var i="string"==typeof t.data,a={};try{a=i?JSON.parse(t.data):t.data}catch(a){}var s=a.__uspapiCall;s&&window.__uspapi(s.command,s.version,function(a,e){var n={__uspapiReturn:{returnValue:a,success:e,callId:s.callId}};i&&(n=JSON.stringify(n)),t.source.postMessage(n,"*")},s.parameter)},!1))}();
+</script>
+<script async src="../cmp.uniconsent.com/v2/5a6357a030/cmp.js"></script>
+<script type="text/javascript">
+	window.googletag = window.googletag || {};
+	window.googletag.cmd = window.googletag.cmd || [];
+	window.googletag.cmd.push(function() {
+		window.googletag.pubads().enableAsyncRendering();
+		window.googletag.pubads().disableInitialLoad();
+	});
+	(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+
+	__tcfapi("addEventListener", 2, function(tcData, success) {
+		if (success && tcData.unicLoad  === true) {
+			if(!window._initAds) {
+				window._initAds = true;
+				var script = document.createElement('script');
+				script.async = true;
+				script.setAttribute('data-ad-client', 'ca-pub-2485708030241382');
+				script.src = '../pagead2.googlesyndication.com/pagead/js/f.txt';
+				document.head.appendChild(script);
+			}
+		}
+	});
+</script>
+</head>
+<body data-sidebar="light" data-keep-enlarged="true" data-layout-size="boxed" data-topbar="dark" data-layout-scrollable="true">
+
+<div id="layout-wrapper">
+<header id="page-topbar">
+
+</div>
+</div>
+</header>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="main-content">
+<div class="page-content">
+<div class="container-fluid">
+
+<div class="row">
+<div class="col-12">
+<div class="page-title-box d-sm-flex align-items-center justify-content-between">
+<h1 class="mb-sm-0 font-size-18">QR Code Generator</h1>
+<div class="page-title-right">
+<ol class="breadcrumb m-0">
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+</div>
+</div>
+<div id="notifications">
+</div>
+<div class="row">
+<div class="col-lg-12">
+<div class="card mb-2">
+<div class="card-body">
+<form id="form" action="javascript:return false;">
+<div class="row">
+<div class="col-sm-6">
+<div class="row mb-2">
+<label for="qr-code-type" class="form-label">QR Code Type</label>
+<select id="qr-code-type" class="form-select">
+<option value="url">URL</option>
+<option value="address-book">Address Book (VCARD)</option>
+<option value="email">Email (MAILTO)</option>
+<option value="event">Event (VEVENT)</option>
+<option value="geo">Geo Coordinates (GEO)</option>
+<option value="text">Plain Text</option>
+<option value="sms">SMS (SMSTO)</option>
+<option value="tel">Telephone (TEL)</option>
+<option value="wifi">WiFi</option>
+</select>
+</div>
+<div class="qr-controls" type="url">
+<div class="row mb-2">
+<label for="urlUrl" class="form-label">*URL</label>
+<input id="urlUrl" class="form-control url" placeholder="URL... (ex: https://www.freeformatter.com)" />
+</div>
+</div>
+<div class="qr-controls" type="address-book" style="display: none">
+<div class="row mb-2">
+<label for="addressName" class="form-label">*Name</label>
+<input id="addressName" class="form-control name" placeholder="Name..." />
+</div>
+<div class="row mb-2">
+<div class="col-6 ps-0">
+<label for="addressOccupation" class="form-label">Occupation</label>
+<input id="addressOccupation" class="form-control occupation" placeholder="Occupation..." />
+</div>
+<div class="col-6 pe-0">
+<label for="addressCompany" class="form-label">Company</label>
+<input id="addressCompany" class="form-control company" placeholder="Company..." />
+</div>
+</div>
+<div class="row mb-2">
+<div class="col-6 ps-0">
+<label for="addressTelephone" class="form-label">Telephone</label>
+<input id="addressTelephone" class="form-control telephone" placeholder="Telephone..." />
+</div>
+<div class="col-6 pe-0">
+<label for="addressEmail" class="form-label">Email</label>
+<input id="addressEmail" class="form-control email" placeholder="Email..." />
+</div>
+</div>
+<div class="row mb-2">
+<label for="addressStreet" class="form-label">Street Address</label>
+<input id="addressStreet" class="form-control street" placeholder="Street Address..." />
+</div>
+<div class="row mb-2">
+<div class="col-6 ps-0">
+<label for="addressCity" class="form-label">City</label>
+<input id="addressCity" class="form-control city" placeholder="City..." />
+</div>
+<div class="col-6 pe-0">
+<label for="addressState" class="form-label">State</label>
+<input id="addressState" class="form-control state" placeholder="State..." />
+</div>
+</div>
+<div class="row mb-2">
+<div class="col-6 ps-0">
+<label for="addressCountry" class="form-label">Country</label>
+<input id="addressCountry" class="form-control country" placeholder="Country..." />
+</div>
+<div class="col-6 pe-0">
+<label for="addressPostalCode" class="form-label">Postal Code</label>
+<input id="addressPostalCode" class="form-control postalcode" placeholder="PostalCode..." />
+</div>
+</div>
+<div class="row mb-2">
+<label for="addressWebsiteUrl" class="form-label">Website Url</label>
+<input id="addressWebsiteUrl" class="form-control website-url" placeholder="Website Url..." />
+</div>
+<div class="row mb-2">
+<label for="addressNote" class="form-label">Note</label>
+<input id="addressNote" class="form-control note" placeholder="Note..." />
+</div>
+</div>
+<div class="qr-controls" type="event" style="display: none">
+<div class="row mb-2">
+<label for="eventTitle" class="form-label">*Title</label>
+<input id="eventTitle" class="form-control title" placeholder="Title..." />
+</div>
+<div class="row mb-2">
+<label for="eventLocation" class="form-label">*Location</label>
+<input id="eventLocation" class="form-control location" placeholder="Location..." />
+</div>
+<div class="row mb-2">
+<label for="eventDescription" class="form-label">Description</label>
+<input id="eventDescription" class="form-control description" placeholder="Description..." />
+</div>
+<div class="row mb-2">
+<label for="eventStartDate" class="form-label">*Start Date (YYYY-MM-DD HH:MM:SS TZ)</label>
+<input id="eventStartDate" class="form-control start-date" placeholder="Start Date... (Ex: 2022-01-01 00:00:00 EST)" />
+</div>
+<div class="row mb-2">
+<label for="eventEndDate" class="form-label">*End Date (YYYY-MM-DD HH:MM:SS TZ)</label>
+<input id="eventEndDate" class="form-control end-date" placeholder="End Date... (Ex: 2022-01-01 00:00:00 EST)" />
+</div>
+</div>
+<div class="qr-controls" type="email" style="display: none">
+<div class="row mb-2">
+<label for="emailEmail" class="form-label">*Email</label>
+<input id="emailEmail" class="form-control email" placeholder="Email..." />
+</div>
+</div>
+<div class="qr-controls" type="geo" style="display: none">
+<div class="row mb-2">
+<label for="geoLatitude" class="form-label">*Latitude</label>
+<input id="geoLatitude" class="form-control latitude" placeholder="Latitude... (ex: 40.860284)" />
+</div>
+<div class="row mb-2">
+<label for="geoLongitude" class="form-label">*Longitude</label>
+<input id="geoLongitude" class="form-control longitude" placeholder="Longitude... (ex: -73.183363)" />
+</div>
+<div class="row mb-2">
+<label for="geoQueryString" class="form-label">Query String</label>
+<input id="geoQueryString" class="form-control queryString" placeholder="Query String..." />
+</div>
+</div>
+<div class="qr-controls" type="text" style="display: none">
+<div class="row mb-2">
+<label for="textText" class="form-label">*Text</label>
+<textarea id="textText" class="form-control text" placeholder="Text..."></textarea>
+</div>
+</div>
+<div class="qr-controls" type="sms" style="display: none">
+<div class="row mb-2">
+<label for="smsTelephone" class="form-label">*Telephone</label>
+<input id="smsTelephone" class="form-control telephone" placeholder="Telephone..." />
+</div>
+<div class="row mb-2">
+<label for="smsMessage" class="form-label">*Message</label>
+<textarea id="smsMessage" class="form-control message" placeholder="Message..."></textarea>
+</div>
+</div>
+<div class="qr-controls" type="tel" style="display: none">
+<div class="row mb-2">
+<label for="telTelephone" class="form-label">*Telephone</label>
+<input id="telTelephone" class="form-control telephone" placeholder="Telephone..." />
+</div>
+</div>
+<div class="qr-controls" type="wifi" style="display: none">
+<div class="row mb-2">
+<label for="wifiSSID" class="form-label">*SSID (Network Id)</label>
+<input id="wifiSSID" class="form-control ssid" placeholder="SSID..." />
+</div>
+<div class="row mb-2">
+<label for="wifiPassword" class="form-label">Password</label>
+<input id="wifiPassword" class="form-control password" placeholder="Password..." type="password" />
+</div>
+<div class="row mb-2">
+<label for="wifiNetwork" class="form-label">Network Type</label>
+<select id="wifiNetwork" class="form-select networkType">
+<option value="WEP">WEP</option>
+<option value="WPA/WPA2">WPA/WPA2</option>
+<option value="nopass">Not secured</option>
+</select>
+</div>
+</div>
+<div class="row mt-3">
+<label for="error" class="form-label">Error Correction</label>
+<select id="error" class="form-select">
+<option value="L">Low (7%)</option>
+<option value="M">Medium (15%)</option>
+<option value="Q" selected="selected">Quartile (25%)</option>
+<option value="H">High (30%)</option>
+</select>
+</div>
+<div class="row mt-3">
+<button id="generateButton" class="btn btn-primary" title="Generate the QR Code">Generate QR Code</button>
+</div>
+</div>
+<div class="col-6 qr-code-image-wrapper">
+<img id="qrCode" src />
+</div>
+</div>
+</form>
+</div>
+
+</div>
+
+
+<div id="before-output" class="before-output-wrapper">
+<script async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2485708030241382" data-ad-slot="9677864628" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div>
+
+</div> 
+</div>
+</div>
+</footer>
+</div>
+
+</div>
+
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="5.0.0.1/js/app.js"></script>
+<link rel="stylesheet" href="5.0.0.1/css/icons.min.css" type="text/css" />
+<script src="5.0.0.1/js/date.js"></script>
+<script>
+
+	$(document).ready(function() {
+
+		$("#qr-code-type").change(QRCode.onTypeChange);
+		$("#qr-code-type").trigger("change");
+
+		$("#generateButton").click(QRCode.onSubmit);
+
+	});
+
+	var QRCode = {
+
+		onTypeChange: function() {
+			$("div.qr-controls").hide();
+			$("div.qr-controls[type='" + QRCode.getType() + "']").show();
+		},
+
+		onSubmit: function() {
+
+			var type = QRCode.getType();
+
+			var queryString = '';
+
+			if (type == 'address-book') {
+				queryString = QRCode.buildAddressBook();
+			} else if (type == 'email') {
+				queryString = QRCode.buildEmail();
+			} else if (type == 'event') {
+				queryString = QRCode.buildEvent();
+			} else if (type == 'geo') {
+				queryString = QRCode.buildGeo();
+			} else if (type == 'text') {
+				queryString = QRCode.buildText();
+			} else if (type == 'sms') {
+				queryString = QRCode.buildSms();
+			} else if (type == 'tel') {
+				queryString = QRCode.buildTel();
+			} else if (type == 'url') {
+				queryString = QRCode.buildUrl();
+			} else if (type == 'wifi') {
+				queryString = QRCode.buildWifi();
+			}
+
+			if (!queryString) {
+				return;
+			}
+
+			QRCode.refreshImage(queryString);
+
+		},
+
+		showFieldError: function( field ) {
+			alert("The field '" + field + "' is mandatory");
+		},
+
+		buildAddressBook: function() {
+
+			let value = null;
+			let str = 'BEGIN:VCARD\nVERSION:3.0\n';
+
+			value = $('div.qr-controls[type="address-book"] input.name').val();
+			if (!$.isBlank(value)) {
+				str += 'N:' + value + '\n';
+			} else {
+				QRCode.showFieldError('Name');
+				return null;
+			}
+
+			value = $('div.qr-controls[type="address-book"] input.company').val();
+			if (!$.isBlank(value)) {
+				str += 'ORG:' + value + '\n';
+			}
+
+			value = $('div.qr-controls[type="address-book"] input.occupation').val();
+			if (!$.isBlank(value)) {
+				str += 'TITLE:' + value + '\n';
+			}
+
+			value = $('div.qr-controls[type="address-book"] input.telephone').val();
+			if (!$.isBlank(value)) {
+				str += 'TEL:' + value + '\n';
+			}
+
+			value = $('div.qr-controls[type="address-book"] input.email').val();
+			if (!$.isBlank(value)) {
+				str += 'EMAIL:' + value + '\n';
+			}
+
+			let street = $('div.qr-controls[type="address-book"] input.street').val();
+			let city = $('div.qr-controls[type="address-book"] input.city').val();
+			let state = $('div.qr-controls[type="address-book"] input.state').val();
+			let country = $('div.qr-controls[type="address-book"] input.country').val();
+			let postalcode = $('div.qr-controls[type="address-book"] input.postalcode').val();
+
+			if (!$.isBlank(street) || !$.isBlank(city) || !$.isBlank(state) || !$.isBlank(country) || !$.isBlank(postalcode)) {
+				str += 'ADR;TYPE=home:;;' + street + ';' + city + ';' + state + ';' + postalcode + ';' + country + '\n';
+			}
+
+			value = $('div.qr-controls[type="address-book"] input.website-url').val();
+			if (!$.isBlank(value)) {
+				str += 'URL:' + value + '\n';
+			}
+
+			value = $('div.qr-controls[type="address-book"] input.note').val();
+			if (!$.isBlank(value)) {
+				str += 'NOTE:' + value + '\n';
+			}
+
+			str += 'END:VCARD';
+			console.debug(str);
+			return str;
+
+		},
+
+		buildEvent: function() {
+
+			var value = null;
+			var str = 'BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\n';
+
+			value = $('div.qr-controls[type="event"] input.title').val();
+			if (!$.isBlank(value)) {
+				str += 'SUMMARY:' + value + '\n';
+			} else {
+				QRCode.showFieldError('Title');
+				return null;
+			}
+
+			value = $('div.qr-controls[type="event"] input.description').val();
+			if (!$.isBlank(value)) {
+				str += 'DESCRIPTION:' + value + '\n';
+			}
+
+			value = $('div.qr-controls[type="event"] input.location').val();
+			if (!$.isBlank(value)) {
+				str += 'LOCATION:' + value + '\n';
+			} else {
+				QRCode.showFieldError('Location');
+				return null;
+			}
+
+			value = $('div.qr-controls[type="event"] input.start-date').val();
+			if (!$.isBlank(value)) {
+				value = QRCode.convertDate(value);
+				str += 'DTSTART:' + value + '\n';
+			} else {
+				QRCode.showFieldError('Start Date');
+				return null;
+			}
+
+			value = $('div.qr-controls[type="event"] input.end-date').val();
+			if (!$.isBlank(value)) {
+				value = QRCode.convertDate(value);
+				str += 'DTEND:' + value + '\n';
+			} else {
+				QRCode.showFieldError('End Date');
+				return null;
+			}
+
+			str += 'END:VEVENT\nEND:VCALENDAR';
+			console.debug(str);
+			return str;
+
+		},
+
+		buildEmail: function() {
+
+			var value = null;
+			var str = 'mailto:';
+
+			value = $('div.qr-controls[type="email"] input.email').val();
+			if (!$.isBlank(value)) {
+				str += value;
+			} else {
+				QRCode.showFieldError('Email');
+				return null;
+			}
+
+			return str;
+
+		},
+
+		buildGeo: function() {
+
+			var value = null;
+			var str = 'geo:';
+
+			value = $('div.qr-controls[type="geo"] input.latitude').val();
+			if (!$.isBlank(value)) {
+				str += value;
+			} else {
+				QRCode.showFieldError('Latitude');
+				return null;
+			}
+
+			value = $('div.qr-controls[type="geo"] input.longitude').val();
+			if (!$.isBlank(value)) {
+				str += ',' + value;
+			} else {
+				QRCode.showFieldError('Longitude');
+				return null;
+			}
+
+			value = $('div.qr-controls[type="geo"] input.queryString').val();
+			if (!$.isBlank(value)) {
+				str += "?q=" + encodeURIComponent(value);
+			}
+
+			return str;
+
+		},
+
+		buildText: function() {
+
+			var value = null;
+			var str = '';
+
+			value = $('div.qr-controls[type="text"] textarea.text').val();
+			if (!$.isBlank(value)) {
+				str += value;
+			} else {
+				QRCode.showFieldError('Text');
+				return null;
+			}
+
+			return str;
+
+		},
+
+		buildSms: function() {
+
+			var value = null;
+			var str = 'smsto:';
+
+			value = $('div.qr-controls[type="sms"] input.telephone').val();
+			if (!$.isBlank(value)) {
+				str += value;
+			} else {
+				QRCode.showFieldError('Telephone');
+				return null;
+			}
+
+			value = $('div.qr-controls[type="sms"] textarea.message').val();
+			if (!$.isBlank(value)) {
+				str += ':' + value;
+			} else {
+				QRCode.showFieldError('Message');
+				return null;
+			}
+
+			return str;
+
+		},
+
+		buildTel: function() {
+
+			var value = null;
+			var str = 'tel:';
+
+			value = $('div.qr-controls[type="tel"] input.telephone').val();
+			if (!$.isBlank(value)) {
+				str += value;
+			} else {
+				QRCode.showFieldError('Telephone');
+				return null;
+			}
+
+			return str;
+
+		},
+
+		buildUrl: function() {
+
+			var value = null;
+			var str = '';
+
+			value = $('div.qr-controls[type="url"] input.url').val();
+
+			if (!$.isBlank(value)) {
+
+				var patt = /^http(s)?:\/\/.+$/;
+				if (!patt.test(value)) {
+					value = 'http://' + value;
+				}
+
+				str += value;
+
+			} else {
+				QRCode.showFieldError('URL');
+				return null;
+			}
+
+			return str;
+
+		},
+
+		buildWifi: function() {
+
+			var value = null;
+			var str = 'WIFI:';
+
+			value = $('div.qr-controls[type="wifi"] input.ssid').val();
+			if (!$.isBlank(value)) {
+				str += 'S:' + value + ';';
+			} else {
+				QRCode.showFieldError('SSID');
+				return null;
+			}
+
+			value = $('div.qr-controls[type="wifi"] input.password').val();
+			if (!$.isBlank(value)) {
+				str += 'P:' + value + ';';
+			}
+
+			value = $('div.qr-controls[type="wifi"] select.networkType').val();
+			if (!$.isBlank(value)) {
+				str += 'T:' + value + ';';
+			}
+
+			return str;
+
+		},
+
+		convertDate: function(rawInput) {
+			var date = Date.parse(rawInput);
+			date = new Date(date).toString("yyyyMMddTHHmmssZ");
+			return date;
+		},
+
+		getType: function() {
+			return $("#qr-code-type").val();
+		},
+
+		refreshImage: function(queryString) {
+			$("#qrCode").attr("src", "https://www.freeformatter.com/qr-code?w=350&h=350&e=" + $("#error").val() + "&c=" + encodeURIComponent(queryString));
+		}
+
+	};
+
+</script>
+</body>
+
+<!-- Mirrored from www.freeformatter.com/qr-code-generator.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jun 2024 13:17:20 GMT -->
+</html>
